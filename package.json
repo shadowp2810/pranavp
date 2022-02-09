@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/shadowp2810/pranavp#readme",
   "devDependencies": {
-    "parcel": "^2.2.1"
+    "parcel-bundler": "^1.12.5"
   }
 }
