@@ -43,9 +43,11 @@ body {
 .logo {
   width: 50px;
   height: 50px;
-  border: 1px solid 6b0e2a;
+  border: 1px solid #6b0e2a;
   margin: 5px;
   border-radius: 5px;
+  position: relative;
+  top: 2px;
 }
 
 .cls-3 {
@@ -57,6 +59,9 @@ body {
   position: relative;
   top: 7px;
   z-index: 1;
+  border: 1px solid #6b0e2a;
+  border-radius: 0px 5px 5px 0px;
+  padding-left: 2px;
 }
 
 .loading {
@@ -273,7 +278,7 @@ a {
 }
 
 .btn--accent {
-  background: #3b99a8;
+  background: #a54a64;
   color: white;
 }
 
@@ -401,6 +406,19 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .nav {
+    border-bottom: solid 2.5px #121212;
+    border-left-style: solid;
+    border-left-color: #121212;
+    border-left-width: 2.5px;
+    border-right-style: solid;
+    border-right-color: #121212;
+    border-right-width: 2.5px;
+    border-top-style: solid;
+    border-top-color: #121212;
+    border-top-width: 2.5px;
+  }
+
   .nav__toggler {
     display: none;
   }
@@ -411,6 +429,13 @@ a {
     font-size: 2rem;
     max-height: 100%;
     opacity: 1;
+    border-left-style: solid;
+    border-left-color: #121212;
+    border-left-width: 2.5px;
+    border-right-style: solid;
+    border-right-color: #121212;
+    border-right-width: 2.5px;
+    padding: 22px 0px;
   }
 
   .nav__item {
@@ -477,20 +502,35 @@ a {
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 0;
+    padding-top: 10px;
   }
 
   .hero__content {
     text-align: left;
     align-self: center;
   }
+
+  .hero__border {
+    border-bottom-style: solid;
+    border-bottom-color: #121212;
+    border-bottom-width: 2.5px;
+    border-left-style: solid;
+    border-left-color: #121212;
+    border-left-width: 2.5px;
+    border-right-style: solid;
+    border-right-color: #121212;
+    border-right-width: 2.5px;
+  }
 }
 
 /* Footer */
 
 .footer {
-  background: #232323;
+  background: #121212;
   padding-top: 1rem;
+  border-bottom-style: solid;
+  border-bottom-color: #121212;
+  border-bottom-width: 2.5px;
 }
 
 .footer a {
