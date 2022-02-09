@@ -1,0 +1,22 @@
+{
+  "name": "pranavp",
+  "version": "1.0.0",
+  "description": "Personal Website at https://pranavp.dev/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadowp2810/pranavp.git"
+  },
+  "author": "Pranav Pradeep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shadowp2810/pranavp/issues"
+  },
+  "homepage": "https://github.com/shadowp2810/pranavp#readme",
+  "devDependencies": {
+    "parcel": "^2.2.1"
+  }
+}
