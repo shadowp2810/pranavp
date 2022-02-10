@@ -140,12 +140,23 @@ body {
   }
 }
 
+.startingPos {
+  right: 20px;
+  top: -170px;
+}
+
 @media screen and (min-width: 768px) {
   .loading {
     animation: rotate 3s linear infinite;
+    animation-delay: 2s;
   }
   .loading__reverse {
     animation: rotate__opposite 3s linear infinite;
+    animation-delay: 2s;
+  }
+  .startingPos {
+    right: 0px;
+    top: -100px;
   }
 
   @keyframes rotate {
