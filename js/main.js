@@ -5,20 +5,20 @@ collapsibles.forEach((item) =>
   })
 );
 
-var red = document.querySelector(".loading");
-var white = document.querySelector(".loading__reverse");
+// var red = document.querySelector(".loading");
+// var white = document.querySelector(".loading__reverse");
 
-function setProperty(duration) {
-  red.style.setProperty("--animation-time", duration + "s");
-  white.style.setProperty("--animation-time", duration + "s");
-}
+// function setProperty(duration) {
+//   red.style.setProperty("--animation-time", duration + "s");
+//   white.style.setProperty("--animation-time", duration + "s");
+// }
 
-function changeAnimationTime() {
-  var animationDuration = Math.random();
-  setProperty(animationDuration);
-}
+// function changeAnimationTime() {
+//   var animationDuration = Math.random();
+//   setProperty(animationDuration);
+// }
 
-setInterval(changeAnimationTime, 1000);
+// setInterval(changeAnimationTime, 1000);
 
 /*
 We use the document object,
