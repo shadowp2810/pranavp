@@ -41,10 +41,11 @@ body {
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 51.4px;
+  height: 51.4px;
   border: 1px solid #6b0e2a;
   margin: 5px;
+  margin-right: 3px;
   border-radius: 5px;
   position: relative;
   top: 2px;
@@ -57,7 +58,7 @@ body {
   font-weight: 700;
   bottom: 50px;
   position: relative;
-  top: 7px;
+  top: 7.2px;
   z-index: 1;
   border: 1px solid #6b0e2a;
   border-radius: 0px 5px 5px 0px;
@@ -73,13 +74,14 @@ body {
   position: relative;
   z-index: 0;
   /* Here we declare our inline animation */
-  animation: rotate 3s linear infinite;
+  animation: rotate 5s linear infinite, moving 3s linear infinite;
   animation-delay: 2s;
 }
 
 .loading__reverse {
   /* background: white; */
-  animation: rotate__opposite 3s linear infinite;
+  animation: rotate__opposite 5s linear infinite,
+    moving__opposite 3s linear infinite;
   animation-delay: 2s;
 }
 
@@ -92,20 +94,22 @@ body {
   to {
     transform: rotate(359deg);
   }
+}
+@keyframes moving {
   0%,
   100% {
-    right: 15px;
-    top: -155px;
+    right: 20px;
+    top: -170px;
   }
   25%,
   75% {
-    right: -120px;
-    top: -5px;
+    right: -100px;
+    top: -50px;
   }
 
   50% {
-    right: -3000px;
-    top: -3000px;
+    right: -70vh;
+    top: -70vh;
   }
 }
 
@@ -117,23 +121,33 @@ body {
   to {
     transform: rotate(-359deg);
   }
+}
+
+@keyframes moving__opposite {
   0%,
   100% {
-    right: 5000px;
-    top: -3000px;
+    right: 80vh;
+    top: 50vh;
   }
   25%,
   75% {
-    right: 0px;
-    top: -75px;
+    right: -10px;
+    top: -50px;
   }
   50% {
-    right: 75px;
-    top: 25px;
+    right: 80px;
+    top: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .loading {
+    animation: rotate 3s linear infinite;
+  }
+  .loading__reverse {
+    animation: rotate__opposite 3s linear infinite;
+  }
+
   @keyframes rotate {
     from {
       transform: rotate(0deg);
